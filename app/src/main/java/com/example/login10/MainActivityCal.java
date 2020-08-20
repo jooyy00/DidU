@@ -47,10 +47,22 @@ public class MainActivityCal extends AppCompatActivity {
     private DatePickerDialog.OnDateSetListener callbackMethodDate;
     private TimePickerDialog.OnTimeSetListener callbackMethodTime;
 
+    private  Button btnNavi;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_cal);
+
+        btnNavi=(Button) findViewById(R.id.btn_open);
+
+        btnNavi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivityCal.this,NaviActivity.class);
+                startActivity(intent);
+            }
+        });
 
         myList=findViewById(R.id.MyList);
         // today=findViewById(R.id.today);

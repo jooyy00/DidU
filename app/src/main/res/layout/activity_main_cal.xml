@@ -27,7 +27,8 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp" />
+                android:layout_marginLeft="16dp"
+                android:id="@+id/btn_open"/>
 
             <TextView
                 android:id="@+id/MyList"
